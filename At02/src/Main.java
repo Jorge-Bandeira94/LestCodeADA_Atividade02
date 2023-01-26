@@ -12,8 +12,9 @@ public class Main {
         retorno.put(1, TypeIphoneEnum.IPHONE_X);
         retorno.put(2, TypeIphoneEnum.IPHONE_9);
         retorno.put(3, TypeIphoneEnum.IPHONE_13_MINI);
-
-        int escolha = scanner.nextInt();
+        System.out.println("Escolha um tipo de Iphone para produzir. [1] - Iphone X / [2] Iphone 9 / [3] Iphone 13 Mini ");
+        System.out.println("Numero:  ");
+            int escolha = scanner.nextInt();
 
         fabrica.getIphone(retorno.get(escolha)).exibirDetalhes();
 
